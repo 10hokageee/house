@@ -1,5 +1,262 @@
-@import 'vars';
-@import 'fonts';
-@import 'global';
-@import 'media';
-@import 'reset';
+@import "vars";
+@import "fonts";
+@import "global";
+@import "media";
+@import "reset";
+@import "libs";
+
+.header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: 10;
+  min-height: 100vh;
+  padding-bottom: 150px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(
+      199deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.84) 100%
+    );
+  }
+
+  &__logo {
+    margin-right: auto;
+  }
+
+  &__content {
+    padding-top: 118px;
+  }
+
+  &__title {
+    max-width: 519px;
+    color: $white;
+    font-size: 80px;
+    @extend %dmsans-700;
+    line-height: 1;
+    letter-spacing: -2.01px;
+  }
+
+  &__text {
+    max-width: 428px;
+  }
+
+  &__link-info {
+    background-color: $white;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    width: 1070px;
+    color: $black;
+    @extend %dmsans-700;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+
+    & svg {
+      width: 24px;
+      height: 12px;
+      fill: $yellow;
+      margin-left: 15px;
+    }
+  }
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+
+  &__list {
+    display: flex;
+    margin-right: 60px;
+  }
+
+  &__list-item {
+    @extend %dmsans-700;
+    color: $white;
+    font-size: 15px;
+
+    &:not(:last-child) {
+      margin-right: 60px;
+    }
+  }
+
+  &__link {
+    border-radius: 0px 18px 0px 0px;
+    padding: 14px 69px 14px 40px;
+    background-color: $yellow;
+    color: $black;
+    font-size: 17px;
+    @extend %dmsans-700;
+    position: relative;
+
+    & svg {
+      width: 20px;
+      height: 10px;
+      fill: $white;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 29px;
+    }
+  }
+}
+
+.footer {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 150px;
+
+  &__top-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  &__top-link {
+    padding: 25px 69px 23px 40px;
+    position: relative;
+
+    & svg {
+      width: 20px;
+      height: 10px;
+      position: absolute;
+      fill: $white;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 29px;
+    }
+  }
+
+  &__top-text {
+    font-size: 42px;
+    @extend %dmsans-700;
+    letter-spacing: -1.055px;
+
+    & span {
+      color: $yellow;
+    }
+  }
+
+  &__bottom-inner {
+    display: grid;
+    grid-template-columns: 134px 670px;
+    gap: 270px;
+    padding-top: 60px;
+  }
+
+  &__bottom-list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__bottom-link {
+    margin-bottom: 30px;
+  }
+
+  &__bottom-item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  &__bottom-social {
+    & svg {
+      width: 22px;
+      height: 22px;
+      fill: $white;
+    }
+  }
+
+  &__bottom-links {
+    display: grid;
+    grid-template-columns: 115px 115px 115px;
+    gap: 159px;
+  }
+
+  &__bottom-nav-title {
+    font-size: 15px;
+    letter-spacing: -0.377px;
+    @extend %dmsans-700;
+    margin-bottom: 10px;
+  }
+
+  &__bottom-nav-item {
+    color: $gray;
+    font-size: 15px;
+    letter-spacing: -0.377px;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.about {
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 704px 737px;
+  padding-top: 66px;
+  padding-bottom: 150px;
+
+  &__content {
+    margin-left: auto;
+    max-width: 474px; 
+     padding: 113px 0 240px 0;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    padding-top: 21px;
+    position: relative;
+  }
+
+  &__text {
+    color: $black;
+    opacity: 0.6;
+    margin-bottom: 30px;
+  }
+
+  &__link {
+    display: inline-block;
+    background-color: $black;
+    color: $white;
+    position: relative;
+
+    & svg {
+      position: absolute;
+      width: 20px;
+      height: 10px;
+      fill: $white;
+      right: 29px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.benefits {
+  background-color: $bg;
+
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+}

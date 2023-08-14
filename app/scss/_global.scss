@@ -45,7 +45,7 @@ body {
   font-size: 17px;
   @extend %dmsans-700;
   position: relative;
-  display: inline-block
+  display: inline-block;
 }
 
 .title {
@@ -60,10 +60,30 @@ body {
     border-radius: 2px;
     left: 0;
     top: 0;
-    content: '';
+    content: "";
     position: absolute;
     width: 169px;
     height: 4px;
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,172,18,1) 35%);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(255, 172, 18, 1) 35%
+    );
   }
+}
+
+.header-wrapper {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  transition: padding 0.4s;
+  z-index: 999;
+  padding-top: 32px;
+}
+
+.header-fixed {
+  background-color: black;
+  padding: 15px 0;
+  z-index: 999;
 }

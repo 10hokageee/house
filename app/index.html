@@ -7,32 +7,38 @@
   <title>House</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body id="body">
   
 <header class="header" style="background-image: url(images/header-bg.jpg);">
+  <div class="header-wrapper">
+
+ 
   <div class="container">
     <nav class="header-menu">
 
-      <a class="header__logo" href="#">
+      <a class="header__logo" href="#body">
         <img class="logo" src="images/logo.svg" alt="Logo">
       </a>
 
       <ul class="header-menu__list">
         <li class="header-menu__list-item">
-          <a class="header-menu__list-link" href="#">Nav Link</a>
+          <a class="header-menu__list-link" href="#about">Nav Link</a>
         </li>
         <li class="header-menu__list-item">
-          <a class="header-menu__list-link" href="#">Nav Link</a>
+          <a class="header-menu__list-link" href="#benefits">Nav Link</a>
         </li>
         <li class="header-menu__list-item">
-          <a class="header-menu__list-link" href="#">Nav Link</a>
+          <a class="header-menu__list-link" href="#reviews">Nav Link</a>
         </li>
         <li class="header-menu__list-item">
-          <a class="header-menu__list-link" href="#">Nav Link</a>
+          <a class="header-menu__list-link" href="#footer">Nav Link</a>
         </li>
       </ul>
 
       <a class="header-menu__link" href="#">Work with us
+        <span class="sr-only">
+          Arrow
+        </span>
         <svg>
           <use xlink:href="images/sprite.svg#arrow"></use>
         </svg>
@@ -40,6 +46,7 @@
       
     </nav>
   </div>
+</div>
 
     <div class="container">
       <div class="header__content">
@@ -54,6 +61,9 @@
 
   <div class="container">
     <a class="header__link-info" href="#">See all listings
+      <span class="sr-only">
+        Arrow
+      </span>
       <svg>
         <use xlink:href="images/sprite.svg#arrow"></use>
       </svg>
@@ -64,12 +74,15 @@
 
 <main class="main">
 
-  <section class="about" style="background-image: url(images/about.jpg);">
+  <section class="about" id="about" style="background-image: url(images/about.jpg);">
     <div class="container">
          <div class="about__content">
           <h2 class="about__title title">You’re in good hands</h2>
           <p class="about__text">Torquatos nostros? quos dolores eos, qui dolorem ipsum per se texit, ne ferae quidem se repellere, idque instituit docere sic: omne animal, simul atque integre iudicante itaque aiunt hanc quasi involuta aperiri, altera occulta quaedam et voluptatem accusantium doloremque.</p>
           <a class="about__link btn" href="#">
+            <span class="sr-only">
+              Arrow
+            </span>
             <svg>
               <use xlink:href="images/sprite.svg#arrow"></use>
             </svg>Learn more</a>
@@ -77,7 +90,7 @@
     </div>
   </section>
 
-  <section class="benefits">
+  <section class="benefits" id="benefits">
     <div class="container">
       <h2 class="benefits__title title">Find your next place to live</h2>
 
@@ -111,10 +124,9 @@
      </div>
 
      <ul class="product-list">
-
       <li class="product-list__item">
       <article class="card">
-         <img class="product-list__img" src="images/poduct-cards/1.jpg" alt=""> 
+         <img class="product-list__img" src="images/poduct-cards/1.jpg" alt="house image (interior)"> 
          <div class="product-list__content">
           <h3 class="product-list__title">
             Malto House
@@ -122,17 +134,24 @@
           <div class="product-list__icons">
             <a class="product-list__link" href="#">
               <span class="product-list__num">4</span>
+              <span class="sr-only">
+                bed
+              </span>
               <svg>
                 <use xlink:href="images/sprite.svg#bed"></use>
               </svg>
             </a>
             <a class="product-list__link" href="#">
               <span class="product-list__num">2</span>
+              <span class="sr-only">shower</span>
               <svg>
                 <use xlink:href="images/sprite.svg#shower"></use>
               </svg>
             </a>
             <a class="product-list__link" href="#">
+              <span class="sr-only">
+                size
+              </span>
               <span class="product-list__num">2</span>
               <svg>
                 <use xlink:href="images/sprite.svg#size"></use>
@@ -144,26 +163,35 @@
       </li>
       <li class="product-list__item">
       <article class="card">
-         <img class="product-list__img" src="images/poduct-cards/1.jpg" alt=""> 
+         <img class="product-list__img" src="images/poduct-cards/1.jpg" alt="house image (interior)"> 
          <div class="product-list__content">
           <h3 class="product-list__title">
             Malto House
           </h3>
           <div class="product-list__icons">
             <a class="product-list__link" href="#">
-              <span class="product-list__num">4</span>
+              <span class="product-list__num">4</span>              
+              <span class="sr-only">
+                bed
+              </span>
               <svg>
                 <use xlink:href="images/sprite.svg#bed"></use>
               </svg>
             </a>
             <a class="product-list__link" href="#">
               <span class="product-list__num">2</span>
+              <span class="sr-only">
+                shower
+              </span>
               <svg>
                 <use xlink:href="images/sprite.svg#shower"></use>
               </svg>
             </a>
             <a class="product-list__link" href="#">
               <span class="product-list__num">2</span>
+              <span class="sr-only">
+                size
+              </span>
               <svg>
                 <use xlink:href="images/sprite.svg#size"></use>
               </svg>
@@ -174,7 +202,7 @@
       </li>
       <li class="product-list__item">
       <article class="card">
-         <img class="product-list__img" src="images/poduct-cards/1.jpg" alt=""> 
+         <img class="product-list__img" src="images/poduct-cards/1.jpg" alt="house image (interior)"> 
          <div class="product-list__content">
           <h3 class="product-list__title">
             Malto House
@@ -182,18 +210,27 @@
           <div class="product-list__icons">
             <a class="product-list__link" href="#">
               <span class="product-list__num">4</span>
+              <span class="sr-only">
+                bed
+              </span>
               <svg>
                 <use xlink:href="images/sprite.svg#bed"></use>
               </svg>
             </a>
             <a class="product-list__link" href="#">
               <span class="product-list__num">2</span>
+              <span class="sr-only">
+                shower
+              </span>
               <svg>
                 <use xlink:href="images/sprite.svg#shower"></use>
               </svg>
             </a>
             <a class="product-list__link" href="#">
               <span class="product-list__num">2</span>
+              <span class="sr-only">
+                size
+              </span>
               <svg>
                 <use xlink:href="images/sprite.svg#size"></use>
               </svg>
@@ -204,7 +241,7 @@
       </li>
       <li class="product-list__item">
       <article class="card">
-         <img class="product-list__img" src="images/poduct-cards/1.jpg" alt=""> 
+         <img class="product-list__img" src="images/poduct-cards/1.jpg" alt="house image (interior)"> 
          <div class="product-list__content">
           <h3 class="product-list__title">
             Malto House
@@ -212,18 +249,27 @@
           <div class="product-list__icons">
             <a class="product-list__link" href="#">
               <span class="product-list__num">4</span>
+              <span class="sr-only">
+                bed
+              </span>
               <svg>
                 <use xlink:href="images/sprite.svg#bed"></use>
               </svg>
             </a>
             <a class="product-list__link" href="#">
               <span class="product-list__num">2</span>
+              <span class="sr-only">
+                shower
+              </span>
               <svg>
                 <use xlink:href="images/sprite.svg#shower"></use>
               </svg>
             </a>
             <a class="product-list__link" href="#">
               <span class="product-list__num">2</span>
+              <span class="sr-only">
+                size
+              </span>
               <svg>
                 <use xlink:href="images/sprite.svg#size"></use>
               </svg>
@@ -234,7 +280,7 @@
       </li>
       <li class="product-list__item">
       <article class="card">
-         <img class="product-list__img" src="images/poduct-cards/1.jpg" alt=""> 
+         <img class="product-list__img" src="images/poduct-cards/1.jpg" alt="house image (interior)"> 
          <div class="product-list__content">
           <h3 class="product-list__title">
             Malto House
@@ -242,18 +288,27 @@
           <div class="product-list__icons">
             <a class="product-list__link" href="#">
               <span class="product-list__num">4</span>
+              <span class="sr-only">
+                bed
+              </span>
               <svg>
                 <use xlink:href="images/sprite.svg#bed"></use>
               </svg>
             </a>
             <a class="product-list__link" href="#">
               <span class="product-list__num">2</span>
+              <span class="sr-only">
+                shower
+              </span>
               <svg>
                 <use xlink:href="images/sprite.svg#shower"></use>
               </svg>
             </a>
             <a class="product-list__link" href="#">
               <span class="product-list__num">2</span>
+              <span class="sr-only">
+                size
+              </span>
               <svg>
                 <use xlink:href="images/sprite.svg#size"></use>
               </svg>
@@ -264,7 +319,7 @@
       </li>
       <li class="product-list__item">
       <article class="card">
-         <img class="product-list__img" src="images/poduct-cards/1.jpg" alt=""> 
+         <img class="product-list__img" src="images/poduct-cards/1.jpg" alt="house image (interior)"> 
          <div class="product-list__content">
           <h3 class="product-list__title">
             Malto House
@@ -272,18 +327,27 @@
           <div class="product-list__icons">
             <a class="product-list__link" href="#">
               <span class="product-list__num">4</span>
+              <span class="sr-only">
+                bed
+              </span>
               <svg>
                 <use xlink:href="images/sprite.svg#bed"></use>
               </svg>
             </a>
             <a class="product-list__link" href="#">
               <span class="product-list__num">2</span>
+              <span class="sr-only">
+                shower
+              </span>
               <svg>
                 <use xlink:href="images/sprite.svg#shower"></use>
               </svg>
             </a>
             <a class="product-list__link" href="#">
               <span class="product-list__num">2</span>
+              <span class="sr-only">
+                size
+              </span>
               <svg>
                 <use xlink:href="images/sprite.svg#size"></use>
               </svg>
@@ -303,6 +367,9 @@
           <h2 class="info__title title">You’re in good hands</h2>
           <p class="info__text">Torquatos nostros? quos dolores eos, qui dolorem ipsum per se texit, ne ferae quidem se repellere, idque instituit docere sic: omne animal, simul atque integre iudicante itaque aiunt hanc quasi involuta aperiri, altera occulta quaedam et voluptatem accusantium doloremque.</p>
           <a class="info__link btn" href="#">Learn more
+            <span class="sr-only">
+              arrow
+            </span>
             <svg>
               <use xlink:href="images/sprite.svg#arrow"></use>
             </svg>
@@ -311,7 +378,7 @@
       </div>
   </section>
 
-  <section class="reviews">
+  <section class="reviews" id="reviews">
     <div class="container">
       <h2 class="reviews__title">
         “Certe, inquam, pertinax non existimant oportere exquisitis rationibus conquisitis de quo enim ipsam. Torquem detraxit hosti et quidem faciunt, ut aut.”
@@ -320,7 +387,7 @@
 
          <li class="reviews__list-item">
           <a class="reviews__list-link" href="#">
-            <img class="reviews__list-img" src="images/clients/client.jpg" alt="">
+            <img class="reviews__list-img" src="images/clients/client.jpg" alt="Client picture">
             <p class="reviews__list-name">Lara Madrigal
               <span>Client</span>
             </p>
@@ -329,7 +396,7 @@
 
          <li class="reviews__list-item">
           <a class="reviews__list-link" href="#">
-          <img class="reviews__list-img" src="images/clients/client.jpg" alt="">
+          <img class="reviews__list-img" src="images/clients/client.jpg" alt="Client picture">
           <p class="reviews__list-name">Lara Madrigal
             <span>Client</span>
           </p>
@@ -338,7 +405,7 @@
 
          <li class="reviews__list-item">
           <a class="reviews__list-link" href="#">
-            <img class="reviews__list-img" src="images/clients/client.jpg" alt="">
+            <img class="reviews__list-img" src="images/clients/client.jpg" alt="Client picture">
             <p class="reviews__list-name">Lara Madrigal
               <span>Client</span>
             </p>
@@ -350,7 +417,7 @@
 
 </main>
 
-<footer class="footer" style="background-image: url(images/footer-bg.jpg);">
+<footer id="footer" class="footer" style="background-image: url(images/footer-bg.jpg);">
   <div class="container">
     <div class="footer__top-inner">
        <p class="footer__top-text">
@@ -359,6 +426,9 @@
        </p>
        <a class="footer__top-link btn" href="#">
         Work with us
+        <span class="sr-only">
+          arrow
+        </span>
         <svg>
           <use xlink:href="images/sprite.svg#arrow"></use>
         </svg>
@@ -367,12 +437,15 @@
 
     <div class="footer__bottom-inner">
       <div class="footer__bottom-socials">
-        <a class="footer__bottom-link" href="#">
+        <a class="footer__bottom-link" href="#body">
           <img src="images/logo.svg" alt="Logo">
         </a>
         <ul class="footer__bottom-list">
           <li class="footer__bottom-item">
             <a class="footer__bottom-social" href="#">
+              <span class="sr-only">
+                facebook
+              </span>
               <svg>
                 <use xlink:href="images/sprite.svg#facebook"></use>
               </svg>
@@ -381,6 +454,9 @@
 
           <li class="footer__bottom-item">
             <a class="footer__bottom-social" href="#">
+              <span class="sr-only">
+                twitter
+              </span>
               <svg>
                 <use xlink:href="images/sprite.svg#twitter"></use>
               </svg>
@@ -389,6 +465,9 @@
 
           <li class="footer__bottom-item">
             <a class="footer__bottom-social" href="#">
+              <span class="sr-only">
+                instagram
+              </span>
               <svg>
                 <use xlink:href="images/sprite.svg#instagram"></use>
               </svg>

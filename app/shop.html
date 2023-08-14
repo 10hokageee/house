@@ -9,46 +9,375 @@
 </head>
 <body>
   
-<header class="header">
+<header class="header header-shop">
+  <div class="header-shop__wrapper">
+    <div class="container">
+      <nav class="header-menu header-shop__menu">
+        <a class="header__logo" href="#">
+          <img class="logo" src="images/logo.svg" alt="Logo">
+        </a>
+  
+        <ul class="header-menu__list">
+          <li class="header-menu__list-item">
+            <a class="header-menu__list-link" href="#">Nav Link</a>
+          </li>
+          <li class="header-menu__list-item">
+            <a class="header-menu__list-link" href="#">Nav Link</a>
+          </li>
+          <li class="header-menu__list-item">
+            <a class="header-menu__list-link" href="#cards">Nav Link</a>
+          </li>
+          <li class="header-menu__list-item">
+            <a class="header-menu__list-link" href="#footer">Nav Link</a>
+          </li>
+        </ul>
+  
+        <a class="header-menu__link" href="#">Work with us
+          <span class="sr-only">arrow</span>
+          <svg>
+            <use xlink:href="images/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+        
+      </nav>
+      <div class="header-shop__bottom">
+        <div class="header-shop__house-info">         
+          <h2 class="header-shop__title">Modern House</h2>
+         <address class="header-shop__address">3002 Foster Ave, Brooklyn, NY 11210, USA</address>
+        </div>
+
+        <div class="header-shop__price-info">
+          <p class="header-shop__price">
+            $450,000
+            <span>$2,800/sq ft</span>
+          </p>
+        </div>        
+      </div>
+    </div>
+  </div>  
+</header>
+
+
+<main class="main">
+  
+<section class="features">
   <div class="container">
-    <nav class="header-menu">
 
-      <a class="header__logo" href="#">
-        <img class="logo" src="images/logo.svg" alt="Logo">
-      </a>
+    <div class="features__inner">
+        <div class="features__product-slide">
+          
+          <div class="features__product-inner">
+            <ul class="features__product-thumb">
+              <li class="features__product-thumb-item">
+               <img src="images/product/1.jpg" alt="house interior image">
+              </li>
+              <li  class="features__product-thumb-item">
+               <img src="images/product/2.jpg" alt="house interior image">
+              </li>
+              <li  class="features__product-thumb-item">
+               <img src="images/product/3.jpg" alt="house interior image">
+              </li>
+              <li  class="features__product-thumb-item">
+               <img src="images/product/4.jpg" alt="house interior image">
+              </li>
+              <li  class="features__product-thumb-item">
+               <img src="images/product/5.jpg" alt="house interior image">
+              </li>
+              <li  class="features__product-thumb-item">
+               <img src="images/product/6.jpg" alt="house interior image">
+              </li>
+              <li  class="features__product-thumb-item">
+               <img src="images/product/7.jpg" alt="house interior image">
+              </li>
+            </ul>
+   
+   
+            <ul class="features__product-big">
+             <li  class="features__product-big-item">
+               <img src="images/product/1.jpg" alt="house interior image">
+              </li>
+              <li  class="features__product-big-item">
+               <img src="images/product/2.jpg" alt="house interior image">
+              </li>
+              <li  class="features__product-big-item">
+               <img src="images/product/3.jpg" alt="house interior image">
+              </li>
+              <li  class="features__product-big-item">
+               <img src="images/product/4.jpg" alt="house interior image">
+              </li>
+              <li  class="features__product-big-item">
+               <img src="images/product/5.jpg" alt="house interior image">
+              </li>
+              <li  class="features__product-big-item">
+               <img src="images/product/6.jpg" alt="house interior image">
+              </li>
+              <li  class="features__product-big-item">
+               <img src="images/product/7.jpg" alt="house interior image">
+              </li>
+             </ul>
+          </div>
+        
 
-      <ul class="header-menu__list">
-        <li class="header-menu__list-item">
-          <a class="header-menu__list-link" href="#">Nav Link</a>
-        </li>
-        <li class="header-menu__list-item">
-          <a class="header-menu__list-link" href="#">Nav Link</a>
-        </li>
-        <li class="header-menu__list-item">
-          <a class="header-menu__list-link" href="#">Nav Link</a>
-        </li>
-        <li class="header-menu__list-item">
-          <a class="header-menu__list-link" href="#">Nav Link</a>
-        </li>
-      </ul>
+          <div class="features__product-details">
+            <div class="features__product-top">
+              <h2 class="features__product-top-title">
+                Details
+              </h2>
+            </div>
 
-      <a class="header-menu__link" href="#">Work with us
+            <ul class="features__product-bottom-list">
+              <li class="features__product-bottom-item">
+               <span class="features__product-bottom-num">4
+                <span class="sr-only">bed</span>
+               <svg>
+                <use xlink:href="images/sprite.svg#bed"></use>
+              </svg>
+            </span>
+              </li>
+              <li class="features__product-bottom-item">
+               <span class="features__product-bottom-num">4
+                <span class="sr-only">shower</span>
+               <svg>
+                <use xlink:href="images/sprite.svg#shower"></use>
+              </svg>
+            </span>
+              </li>
+              <li class="features__product-bottom-item">
+               <span class="features__product-bottom-num">4
+                <span class="sr-only">size</span>
+               <svg>
+                <use xlink:href="images/sprite.svg#size"></use>
+              </svg>
+            </span>
+              </li>
+              <li class="features__product-bottom-item">
+               <span class="features__product-bottom-num">4
+                <span class="sr-only">garage</span>
+               <svg>
+                <use xlink:href="images/sprite.svg#garage"></use>
+              </svg>
+            </span>
+              </li>
+              <li class="features__product-bottom-item">
+               <span class="features__product-bottom-num">2007
+                <span class="sr-only">date</span>
+               <svg>
+                <use xlink:href="images/sprite.svg#date"></use>
+              </svg>
+            </span>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="features__product-info">   
+           <h2 class="features__product-title">
+              Description
+           </h2>
+           <p class="features__product-text">
+            At vero eos et iusto odio dignissimos ducimus, qui haec putat, ut ipsi auctori huius disciplinae placet: constituam, quid sit numeranda nec me ab illo inventore veritatis et expedita distinctio nam libero tempore, cum memoriter, tum etiam ac ratione.</p>
+           <p class="features__product-text">
+              Si sine metu degendae praesidia firmissima filium morte multavit si sine causa? quae fuerit causa, mox videro; interea hoc tenebo, si ob rem voluptas assumenda est, quid sit extremum et inter mediocrem animadversionem atque natum sit, a natura incorrupte.
+           </p>
+           <p class="features__product-text">
+              Omne animal, simul atque in sanguinem suum tam inportuno tamque crudeli; sin, ut earum motus et accusamus et argumentandum et dolore suo sanciret militaris imperii disciplinam exercitumque in liberos atque haec ratio late patet in quo pertineant non possim.
+           </p>
+          </div>
+
+           <div class="features__product-items">
+            <h2 class="features__product-items-title">
+              Features
+            </h2>
+             <ul class="features__product-items-list">
+              <li class="features__product-item-list">
+                Air Conditioning
+              </li>
+              <li class="features__product-item-list">
+                Air Conditioning
+              </li>
+              <li class="features__product-item-list">
+                Air Conditioning
+              </li>
+              <li class="features__product-item-list">
+                Air Conditioning
+              </li>
+              <li class="features__product-item-list">
+                Air Conditioning
+              </li>
+              <li class="features__product-item-list">
+                Air Conditioning
+              </li>
+              <li class="features__product-item-list">
+                Air Conditioning
+              </li>
+              <li class="features__product-item-list">
+                Air Conditioning
+              </li>
+              <li class="features__product-item-list">
+                Air Conditioning
+              </li>
+              <li class="features__product-item-list">
+                Air Conditioning
+              </li>
+              <li class="features__product-item-list">
+                Air Conditioning
+              </li>
+              <li class="features__product-item-list">
+                Air Conditioning
+              </li>
+              <li class="features__product-item-list">
+                Air Conditioning
+              </li>
+              <li class="features__product-item-list">
+                Air Conditioning
+              </li>
+              <li class="features__product-item-list">
+                Air Conditioning
+              </li>
+             </ul>
+           </div>
+       </div>
+  
+
+    <div class="form">
+      <form class="features__form" action="#">
+       <div class="features__form-user">
+        <img class="features__form-img" src="images/avatar.jpg" alt="Client avatar">
+         <div class="features__form-info">
+           <p class="features__form-name">Kayley Hall</p>
+         <a class="features__form-link" href="#">View profile</a>
+         </div>
+      </div>
+       <input class="features__form-input" placeholder="Name" type="text">
+       <input class="features__form-input" placeholder="Phone" type="text">
+       <input class="features__form-input" placeholder="Email" type="text">
+       <textarea class="features__form-textarea" placeholder="Hello, I am interested in…"></textarea>
+       <a class="features__form-btn btn" href="#">
+        <span class="sr-only">arrow</span>
         <svg>
           <use xlink:href="images/sprite.svg#arrow"></use>
         </svg>
-      </a>
-      
-    </nav>
-  </div>
-
+        Learn more
+       </a>
+      </form>
+    </div>
     
-</header>
+  </div>
+  </div>
+</section>
 
-<main class="main">
-
+<section class="shop-cards" id="cards">
+  <div class="container">
+    <h2 class="shop-cards__title title">
+      Similar listings
+    </h2>
+     <ul class="shop-cards__list">
+      <li class="shop-cards__item">
+        <article class="card">
+          <img class="product-list__img" src="images/poduct-cards/1.jpg" alt="house image (interior)"> 
+          <div class="product-list__content">
+           <h3 class="product-list__title">
+             Malto House
+           </h3>
+           <div class="product-list__icons">
+             <a class="product-list__link" href="#">
+               <span class="product-list__num">4</span>
+               <span class="sr-only">bed</span>
+               <svg>
+                 <use xlink:href="images/sprite.svg#bed"></use>
+               </svg>
+             </a>
+             <a class="product-list__link" href="#">
+               <span class="product-list__num">2</span>
+               <span class="sr-only">shower</span>
+               <svg>
+                 <use xlink:href="images/sprite.svg#shower"></use>
+               </svg>
+             </a>
+             <a class="product-list__link" href="#">
+               <span class="product-list__num">2</span>
+               <span class="sr-only">size</span>
+               <svg>
+                 <use xlink:href="images/sprite.svg#size"></use>
+               </svg>
+             </a>
+           </div>
+          </div>
+        </article>
+      </li>
+      <li class="shop-cards__item">
+        <article class="card">
+          <img class="product-list__img" src="images/poduct-cards/1.jpg" alt="house image (interior)"> 
+          <div class="product-list__content">
+           <h3 class="product-list__title">
+             Malto House
+           </h3>
+           <div class="product-list__icons">
+             <a class="product-list__link" href="#">
+               <span class="product-list__num">4</span>
+               <span class="sr-only">bed</span>
+               <svg>
+                 <use xlink:href="images/sprite.svg#bed"></use>
+               </svg>
+             </a>
+             <a class="product-list__link" href="#">
+               <span class="product-list__num">2</span>
+               <span class="sr-only">shower</span>
+               <svg>
+                 <use xlink:href="images/sprite.svg#shower"></use>
+               </svg>
+             </a>
+             <a class="product-list__link" href="#">
+               <span class="product-list__num">2</span>
+               <span class="sr-only">size</span>
+               <svg>
+                 <use xlink:href="images/sprite.svg#size"></use>
+               </svg>
+             </a>
+           </div>
+          </div>
+        </article>
+      </li>
+      <li class="shop-cards__item">
+        <article class="card">
+          <img class="product-list__img" src="images/poduct-cards/1.jpg" alt="house image (interior)"> 
+          <div class="product-list__content">
+           <h3 class="product-list__title">
+             Malto House
+           </h3>
+           <div class="product-list__icons">
+             <a class="product-list__link" href="#">
+               <span class="product-list__num">4</span>
+               <span class="sr-only">bed</span>
+               <svg>
+                 <use xlink:href="images/sprite.svg#bed"></use>
+               </svg>
+             </a>
+             <a class="product-list__link" href="#">
+               <span class="product-list__num">2</span>
+               <span class="sr-only">shower</span>
+               <svg>
+                 <use xlink:href="images/sprite.svg#shower"></use>
+               </svg>
+             </a>
+             <a class="product-list__link" href="#">
+               <span class="product-list__num">2</span>
+               <span class="sr-only">size</span>
+               <svg>
+                 <use xlink:href="images/sprite.svg#size"></use>
+               </svg>
+             </a>
+           </div>
+          </div>
+        </article>
+      </li>
+      
+     </ul>
+  </div>
+</section>
 </main>
 
-<footer class="footer" style="background-image: url(images/footer-bg.jpg);">
+<footer class="footer" id="footer" style="background-image: url(images/footer-bg.jpg);">
   <div class="container">
     <div class="footer__top-inner">
        <p class="footer__top-text">
@@ -57,6 +386,7 @@
        </p>
        <a class="footer__top-link btn" href="#">
         Work with us
+        <span class="sr-only">arrow</span>
         <svg>
           <use xlink:href="images/sprite.svg#arrow"></use>
         </svg>
@@ -71,6 +401,7 @@
         <ul class="footer__bottom-list">
           <li class="footer__bottom-item">
             <a class="footer__bottom-social" href="#">
+              <span class="sr-only">facebook</span>
               <svg>
                 <use xlink:href="images/sprite.svg#facebook"></use>
               </svg>
@@ -79,6 +410,7 @@
 
           <li class="footer__bottom-item">
             <a class="footer__bottom-social" href="#">
+              <span class="sr-only">twitter</span>
               <svg>
                 <use xlink:href="images/sprite.svg#twitter"></use>
               </svg>
@@ -87,6 +419,7 @@
 
           <li class="footer__bottom-item">
             <a class="footer__bottom-social" href="#">
+              <span class="sr-only">instagram</span>
               <svg>
                 <use xlink:href="images/sprite.svg#instagram"></use>
               </svg>

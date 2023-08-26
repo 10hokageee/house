@@ -9,14 +9,14 @@ $(function(){
     slidesToShow: 8,
     draggable: false,
     arrows: false,
-    variableWidth: true
+    variableWidth: true,
   });
 
   $('.features__product-big').slick({
     asNavFor: '.features__product-thumb',
     draggable: false,
     arrows: false,
-    variableWidth: true
+    fade: true
   });
 
 
